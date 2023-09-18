@@ -5,7 +5,7 @@ const GamesSummary = () => {
     return (
         <section className={classes.summary}>
             <h2>The largest (fake) video game retailer in Canada.</h2>
-            <p>Buy video games for PlayStation.</p>
+            <p>Buy video games!</p>
         </section>
     );
 }

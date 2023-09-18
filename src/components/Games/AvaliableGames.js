@@ -1,10 +1,10 @@
-import { isTextFile } from "@aws-amplify/core";
 import React from "react";
 import useFetch from "../../hooks/useFetch";
 
 import LoadingComponent from "../UI/Loading";
 
-import Games from "./Games";
+import GameItem from "./GameItem/GameItem";
+import Card from "../UI/Card";
 
 const AvaliableGames = (props) => {
   const { data, error } = useFetch(
@@ -21,19 +21,19 @@ const AvaliableGames = (props) => {
     return <LoadingComponent />;
   }
 
-  const results = data['results'];
+  const results = data["results"];
   const resultsList = Object.values(results);
-//   resultsList.map(item=>console.log(item.id));
+  //   resultsList.map(item=>console.log(item.id));
 
   const gameList = resultsList.map((game) => {
-    return(<Games key={game.id} id={game.id} />);
+    return <GameItem key={game.id} id={game.id} name={game.name} desc={game.metacritic}/>;
   });
 
   return (
     <section>
-      <ul>
-        {gameList}
-      </ul>
+      <Card>
+        <ul>{gameList}</ul>
+      </Card>
     </section>
   );
 };
