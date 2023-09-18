@@ -38,3 +38,14 @@
     transform: translateY(0);
   }
 }
+
+@keyframes slide-out {
+  from {
+    opacity: 1;
+    transform: translateY(-3rem);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(0);
+  }
+}
