@@ -1,0 +1,17 @@
+.game-detail-display-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-style: italic;
+}
+
+.storeBtnGroup {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 1rem;
+  }

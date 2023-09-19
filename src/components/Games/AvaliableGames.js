@@ -8,7 +8,7 @@ import Card from "../UI/Card";
 
 const AvaliableGames = (props) => {
   const { data, error } = useFetch(
-    "https://api.rawg.io/api/games?ordering=release&page_size=10&platform=2"
+    "https://api.rawg.io/api/games?ordering=release&page_size=10&platform=2&"
   );
   if (error) {
     return (
@@ -26,7 +26,16 @@ const AvaliableGames = (props) => {
   //   resultsList.map(item=>console.log(item.id));
 
   const gameList = resultsList.map((game) => {
-    return <GameItem key={game.id} id={game.id} name={game.name} desc={game.metacritic}/>;
+    return (
+      <GameItem
+        onClickGameDetail={props.onClickGameDetail}
+        key={game.id}
+        id={game.id}
+        name={game.name}
+        desc={game.metacritic}
+        slug={game.slug}
+      />
+    );
   });
 
   return (

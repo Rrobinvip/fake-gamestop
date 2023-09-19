@@ -1,24 +1,28 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 const useFetch = (url) => {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
 
-  // Prevent on un-necessary data fetch on re-render with the same url.
   useEffect(() => {
+    let isMounted = true; // To prevent state update on an unmounted component
     const fetchData = async () => {
       try {
-        const response = await fetch(
-          `${url}&key=${process.env.REACT_APP_RAWG_API_KEY}`
-        );
+        const response = await fetch(`${url}key=${process.env.REACT_APP_RAWG_API_KEY}`);
+        if (!response.ok) throw new Error("Network response was not ok");
+
         const result = await response.json();
-        setData(result);
+        if (isMounted) setData(result);
       } catch (error) {
-        setError(error);
+        if (isMounted) setError(error);
       }
     };
 
     fetchData();
+
+    return () => {
+      isMounted = false; // Cleanup
+    };
   }, [url]);
 
   return { data, error };

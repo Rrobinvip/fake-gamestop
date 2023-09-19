@@ -15,11 +15,17 @@ const GameItem = (props) => {
       price: 69.99,
     });
   };
+
+  // props.onClickGameDetail
+  const gameDetailClickHandler = (event) => {
+    props.onClickGameDetail(props.id, props.slug, props.name);
+  };
+
   return (
     <li className={classes.game}>
       {/* {props.id} */}
       <div>
-        <h3>{props.name}</h3>
+        <h3 onClick={gameDetailClickHandler} className={classes.h3Clickable}>{props.name}</h3>
         <div className={classes.description}>Metacritic: {props.desc}</div>
         <div className={classes.price}>$69.99</div>
       </div>
