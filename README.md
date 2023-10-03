@@ -9,12 +9,9 @@
 ## Screenshot
 
 <p align="center">
-  <img src="https://z1.ax1x.com/2023/10/03/pPO8IAI.png" alt="Screenshot 1"/>
+  <img src="https://github.com/Rrobinvip/fake-gamestop/tree/main/Screenshot/gameshop1.png" alt="Screenshot 1"/>
 </p>
-
-[![pPO8IAI.md.png](https://z1.ax1x.com/2023/10/03/pPO8IAI.md.png)](https://imgse.com/i/pPO8IAI)
 
 <p align="center">
-  <img src="https://z1.ax1x.com/2023/10/03/pPO84HA.png" alt="Screenshot 2"/>
+  <img src="https://imgse.com/i/pPO84HA" alt="Screenshot 2"/>
 </p>
-
