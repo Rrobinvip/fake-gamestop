@@ -9,9 +9,9 @@
 ## Screenshot
 
 <p align="center">
-  <img src="https://github.com/Rrobinvip/fake-gamestop/tree/main/Screenshot/gameshop1.png" alt="Screenshot 1"/>
+  <img src="https://github.com/Rrobinvip/fake-gamestop/blob/main/Screenshot/gameshop1.png?raw=true" alt="Screenshot 1"/>
 </p>
 
 <p align="center">
-  <img src="https://imgse.com/i/pPO84HA" alt="Screenshot 2"/>
+  <img src="https://github.com/Rrobinvip/fake-gamestop/blob/main/Screenshot/gameshop2.png?raw=true" alt="Screenshot 2"/>
 </p>
