@@ -9,9 +9,10 @@
 ## Screenshot
 
 <p align="center">
-  <img src="https://imgse.com/i/pPO8IAI" alt="Sublime's custom image"/>
+  <img src="https://z1.ax1x.com/2023/10/03/pPO8IAI.png" alt="Screenshot 1"/>
 </p>
 
 <p align="center">
-  <img src="https://imgse.com/i/pPO84HA" alt="Sublime's custom image"/>
+  <img src="https://z1.ax1x.com/2023/10/03/pPO84HA.png" alt="Screenshot 2"/>
 </p>
+
